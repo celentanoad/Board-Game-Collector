@@ -21,3 +21,10 @@ class Game(models.Model):
     
     def get_absolute_url(self):
         return reverse('detail', kwargs={'game_id': self.id})
+
+class Photo(models.Model):
+    url = models.CharField(max_length=2000)
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Photo for game_id: {self.game_id} @{self.url}"

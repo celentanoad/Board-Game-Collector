@@ -7,12 +7,14 @@
 {% else %}
     <h1>Add Board Game</h1>
 {% endif %}
-<form action="" method="post">
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
-    <input type="submit" value="Submit" class="btn">
-</form>
+<div class="form">
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+            <input type="submit" value="Submit" class="btn">
+    </form>
+</div>
 
 {% endblock %}

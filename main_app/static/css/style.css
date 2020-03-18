@@ -2,6 +2,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: rgb(105, 135, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   main {
@@ -15,4 +17,28 @@ body {
 
   .nav-wrapper {
     background-color: grey;
+  }
+
+  .footer-wrapper {
+    background-color: grey;
+  }
+
+  .form {
+    background-color: white;
+    color: black;
+  }
+
+  .btn {
+    background: rgb(105, 135, 105);
+    border: solid 2px grey;
+  }
+
+  .card-title {
+    color: black;
+  }
+
+
+  img {
+    width: 500px;
+    height: 500px;
   }

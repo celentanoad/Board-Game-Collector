@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Board Game Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ game.name }}</span>
+    <p>Publisher: {{ game.publisher }}</p>
+    <p>Description: {{ game.description }}</p>
+    <p>Number of Players: {{ game.numPlayers }}</p>
+  </div>
+</div>
+
+{% endblock %}

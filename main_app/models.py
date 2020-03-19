@@ -14,7 +14,7 @@ class Game(models.Model):
     name = models.CharField(max_length=250)
     numPlayers = models.IntegerField('Number of Players')
     description = models.TextField()
-    stores = models.ManyToManyField(Store)
+    stores = models.ManyToManyField(Store, blank=True)
 
     def __str__(self):
         return self.name
